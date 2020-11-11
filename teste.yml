@@ -4,29 +4,32 @@
   become: yes
   roles:
     - kewlfft.aur
+    - pacman
+    - bluetooth
   tasks:
-  - name: update
+  - name: install arandr
     pacman:
-      update_cache: yes
-  - name: install base-devel
+      name: arandr
+      state: present
+  - name: install bash
     pacman:
-      name: base-devel
+      name: bash, bash-completion
+      state: present
+  - name: install bzip2
+    pacman:
+      name: bzip2
+      state: present
+  - name: install clojure
+    pacman:
+      name: clojure
+      state: present
+  - name: install code
+    pacman:
+      name: code
       state: present
   - name: install go
     pacman:
       name: go
-      state: present
-  - name: instal bluez
-    pacman:
-      name: bluez
-      state: present
-  - name: instal bluez-utils
-    pacman:
-      name: bluez-utils
-      state: present
-  - name: instal blueman
-    pacman:
-      name: blueman
       state: present
   - name: instal calibre
     pacman:
@@ -92,12 +95,6 @@
     pacman:
       name: playerctl
       state: present
-  - name: install reflector
-    pacman:
-      name: reflector
-      state: present
-  - name: update mirrors
-    command: reflector --country Brazil --protocol https --sort rate --save /etc/pacman.d/mirrorlist
   - name: install git
     pacman:
       name: git
@@ -154,4 +151,10 @@
     become: no
   - name: install spotify
     aur: name=spotify use=makepkg state=present skip_pgp_check=yes
+    become: no
+  - name: install dropbox
+    aur: name=dropbox use=makepkg state=present skip_pgp_check=yes
+    become: no
+  - name: install ttf-iosevka
+    aur: name=ttf-iosevka use=yay state=present
     become: no

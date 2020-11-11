@@ -1,0 +1,20 @@
+---
+- name: install reflector
+  pacman:
+    name: reflector
+    state: present
+- name: update mirrors
+  command: reflector --country Brazil --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+  register: mirrors_updated
+- name: ebug
+  debug:
+    msg: "{{ mirrors_updated['failed'] }}"
+- name: update
+  pacman:
+    update_cache: yes
+  when:
+    mirrors_updated['failed'] == false
+- name: install base-devel
+  pacman:
+    name: base-devel
+    state: present

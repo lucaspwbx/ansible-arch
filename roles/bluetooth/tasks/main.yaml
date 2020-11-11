@@ -1,0 +1,17 @@
+- name: instal bluez
+  pacman:
+    name: bluez
+    state: present
+- name: instal bluez-utils
+  pacman:
+    name: bluez-utils
+    state: present
+- name: instal blueman
+  pacman:
+    name: blueman
+    state: present
+- name: enable bluetooth.service
+  systemd:
+    name: bluetooth
+    enabled: yes
+    masked: no
