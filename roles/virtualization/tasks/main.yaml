@@ -1,0 +1,13 @@
+---
+- name: install libvirt
+  pacman:
+    name: libvirt
+    state: present
+- name: install qemu
+  pacman:
+    name: qemu
+    state: present
+- name: install virt-manager
+  pacman:
+    name: virt-manager
+    state: present    

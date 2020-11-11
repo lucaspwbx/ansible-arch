@@ -1,0 +1,13 @@
+---
+- name: import gpg keys
+  command: gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+  become: no
+- name: install tor
+  aur: name=tor-browser use=yay state=present
+  become: no
+- name: install qutebrowser-git
+  aur: name=qutebrowser-git use=yay state=present
+  become: no
+- name: install brave-bin
+  aur: name=brave-bin use=yay state=present
+  become: no

@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "generic/arch"
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "teste.yml"
+    ansible.playbook = "arch-bootstrap.yml"
   end
 
   # Disable automatic box update checking. If you disable this, then
@@ -53,6 +53,8 @@ Vagrant.configure("2") do |config|
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
+  config.vm.provider "libvirt" do |vb|
+  end
   # config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true

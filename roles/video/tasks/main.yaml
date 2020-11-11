@@ -1,0 +1,9 @@
+---
+- name: install mpv
+  pacman:
+    name: mpv
+    state: present
+- name: install pepper-flash
+  pacman:
+    name: pepper-flash
+    state: present

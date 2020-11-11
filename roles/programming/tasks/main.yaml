@@ -1,0 +1,27 @@
+---
+- name: install clojure
+  pacman:
+    name: clojure
+    state: present
+- name: install go
+  pacman:
+    name: go
+    state: present
+- name: install code
+  pacman:
+    name: code
+    state: present
+- name: install neovim
+  aur: name=neovim-nightly use=yay state=present
+  become: no
+- name: install emacs-native-comp-git
+  aur: name=emacs-native-comp-git use=yay state=present
+  become: no
+- name: install yarn
+  pacman:
+    name: yarn
+    state: present
+- name: install npm
+  pacman:
+    name: npm
+    state: present

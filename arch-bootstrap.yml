@@ -1,0 +1,32 @@
+---
+- name: Echo 
+  hosts: all
+  become: yes
+  roles:
+    - kewlfft.aur
+    - pacman
+    - bluetooth
+    - programming
+    - virtualization
+    - audio
+    - video
+    - db
+    - apps
+    - fonts
+  tasks:
+  - name: install arandr
+    pacman:
+      name: arandr
+      state: present
+  - name: install bash
+    pacman:
+      name: bash, bash-completion
+      state: present
+  - name: install bzip2
+    pacman:
+      name: bzip2
+      state: present
+  - name: install acpi
+    pacman:
+      name: acpi
+      state: present

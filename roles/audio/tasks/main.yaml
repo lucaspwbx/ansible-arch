@@ -1,0 +1,32 @@
+---
+- name: instal alsa-utils
+  pacman:
+    name: alsa-utils
+    state: present
+- name: instal pulseaudio
+  pacman:
+    name: pulseaudio
+    state: present
+- name: instal pulseaudio-alsa
+  pacman:
+    name: pulseaudio-alsa
+    state: present
+- name: instal pavucontrol
+  pacman:
+    name: pavucontrol
+    state: present
+- name: instal pulseaudio-equalizer-ladspa
+  pacman:
+    name: pulseaudio-equalizer-ladspa
+    state: present
+- name: install ncmpcpp
+  pacman:
+    name: ncmpcpp
+    state: present
+- name: install playerctl
+  pacman:
+    name: playerctl
+    state: present
+- name: install mpvc-git
+  aur: name=mpvc-git use=yay state=present
+  become: no

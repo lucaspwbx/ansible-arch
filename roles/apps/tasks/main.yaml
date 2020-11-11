@@ -1,0 +1,17 @@
+---
+- name: install telegram
+  aur: name=telegram-desktop use=yay state=present
+  become: no
+- name: install jdownloader2
+  aur: name=jdownloader2 use=yay state=present
+  become: no
+- name: install spotify
+  aur: name=spotify use=makepkg state=present skip_pgp_check=yes
+  become: no
+- name: install dropbox
+  aur: name=dropbox use=makepkg state=present skip_pgp_check=yes
+  become: no
+- name: install calibre
+  pacman:
+    name: calibre
+    state: present

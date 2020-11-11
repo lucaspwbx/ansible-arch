@@ -18,3 +18,18 @@
   pacman:
     name: base-devel
     state: present
+- name: install git
+  pacman:
+    name: git
+    state: present
+- name: ls yay
+  shell: ls yay/
+  ignore_errors: yes
+  register: yay_downloaded
+- name: clone yay
+  command: git clone https://aur.archlinux.org/yay.git 
+  become: no
+  when: yay_downloaded['failed'] == true
+- name: install yay
+  aur: name=yay use=makepkg state=present
+  become: no

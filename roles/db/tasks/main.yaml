@@ -1,0 +1,4 @@
+---
+- name: install pgcli
+  aur: name=pgcli use=yay state=present
+  become: no

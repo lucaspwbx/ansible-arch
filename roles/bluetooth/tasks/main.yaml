@@ -10,6 +10,9 @@
   pacman:
     name: blueman
     state: present
+- name: install pulseaudio-modules-bt-git
+  aur: name=pulseaudio-modules-bt-git use=yay state=present
+  become: no
 - name: enable bluetooth.service
   systemd:
     name: bluetooth
