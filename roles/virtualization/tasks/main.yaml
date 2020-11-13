@@ -11,3 +11,8 @@
   pacman:
     name: virt-manager
     state: present    
+# enabled copy and paste support in a guest virtual machine
+- name: install spice-vdagent
+  pacman:
+    name: spice-vdagent
+    state: present    

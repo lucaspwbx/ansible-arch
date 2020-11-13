@@ -2,3 +2,23 @@
 - name: install i3-gaps
   aur: name=i3-gaps use=yay state=present
   become: no
+- name: ls dwm
+  shell: ls dwm/
+  ignore_errors: yes
+  register: dwm_downloaded
+- name: clone dwm
+  command: git clone https://git.suckless.org/dwm
+  become: no
+  when: dwm_downloaded['failed'] == true
+- name: copy default config
+  shell: cp config.def.h config.h
+  become: yes
+  args:
+    chdir: dwm/
+- name: compile dwm
+  shell: make install
+  become: yes
+  register: dwm_installed
+  args:
+    chdir: dwm/
+    creates: dwm_log.txt

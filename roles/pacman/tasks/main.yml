@@ -6,9 +6,6 @@
 - name: update mirrors
   command: reflector --country Brazil --protocol https --sort rate --save /etc/pacman.d/mirrorlist
   register: mirrors_updated
-- name: ebug
-  debug:
-    msg: "{{ mirrors_updated['failed'] }}"
 - name: update
   pacman:
     update_cache: yes
