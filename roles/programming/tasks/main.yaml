@@ -1,8 +1,18 @@
 ---
+- name: install rust
+  pacman:
+    name: rust
+    state: present
 - name: install clojure
   pacman:
     name: clojure
     state: present
+- name: install clj-kondo-bin
+  aur:
+    name: clj-kondo-bin
+    use: yay
+    state: present
+  become: no
 - name: install go
   pacman:
     name: go
@@ -14,8 +24,8 @@
 - name: install neovim
   aur: name=neovim-nightly use=yay state=present
   become: no
-- name: install emacs-native-comp-git
-  aur: name=emacs-native-comp-git use=yay state=present
+- name: install emacs
+  aur: name=emacs use=yay state=present
   become: no
 - name: install yarn
   pacman:
@@ -24,4 +34,12 @@
 - name: install npm
   pacman:
     name: npm
+    state: present
+- name: install jre8-openjdk
+  pacman:
+    name: jre8-openjdk
+    state: present
+- name: install python stuff
+  pacman:
+    name: python-oauth2client, python-pip, python-pipenv, python-pyinotify
     state: present

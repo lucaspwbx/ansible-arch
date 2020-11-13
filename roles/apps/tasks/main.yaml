@@ -5,9 +5,6 @@
 - name: install jdownloader2
   aur: name=jdownloader2 use=yay state=present
   become: no
-- name: install spotify
-  aur: name=spotify use=makepkg state=present skip_pgp_check=yes
-  become: no
 - name: install dropbox
   aur: name=dropbox use=makepkg state=present skip_pgp_check=yes
   become: no
@@ -15,3 +12,58 @@
   pacman:
     name: calibre
     state: present
+- name: install keepassxc
+  pacman:
+    name: keepassxc
+    state: present
+- name: install kitty
+  pacman:
+    name: kitty
+    state: present
+- name: install kleopatra
+  pacman:
+    name: kleopatra
+    state: present
+- name: install mupdf
+  pacman:
+    name: mupdf
+    state: present
+- name: install evince
+  pacman:
+    name: evince
+    state: present
+- name: install pandoc stuff
+  pacman:
+    name: pandoc-citeproc, pandoc-crossref
+    state: present
+- name: install pass
+  pacman:
+    name: pass
+    state: present
+- name: install peek
+  pacman:
+    name: peek
+    state: present
+- name: install picom
+  pacman:
+    name: picom
+    state: present
+- name: install picard
+  pacman:
+    name: picard
+    state: present
+- name: install pinta
+  pacman:
+    name: pinta
+    state: present
+- name: install qbittorrent
+  pacman:
+    name: qbittorrent
+    state: present
+- name: install ranger
+  pacman:
+    name: ranger
+    state: present
+- name: install jdownloader2
+  aur: name=jdownloader2 use=yay state=present
+  become: no

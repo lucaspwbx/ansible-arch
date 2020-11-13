@@ -1,0 +1,4 @@
+---
+- name: install i3-gaps
+  aur: name=i3-gaps use=yay state=present
+  become: no

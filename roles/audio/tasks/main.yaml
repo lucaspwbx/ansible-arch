@@ -27,6 +27,17 @@
   pacman:
     name: playerctl
     state: present
+- name: install pamixer
+  pacman:
+    name: pamixer
+    state: present
 - name: install mpvc-git
   aur: name=mpvc-git use=yay state=present
   become: no
+- name: install ncpamixer
+  aur: name=ncpamixer-git use=yay state=present
+  become: no
+- name: install pavucontrol
+  pacman:
+    name: pavucontrol
+    state: present

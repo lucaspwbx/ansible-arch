@@ -1,0 +1,92 @@
+---
+- name: install coreutils
+  pacman:
+    name: coreutils
+    state: present
+- name: install bash
+  pacman:
+    name: bash
+    state: present
+- name: install bash-completion
+  pacman:
+    name: bash-completion
+    state: present
+- name: install bzip2
+  pacman:
+    name: bzip2
+    state: present
+- name: install cronie
+  pacman:
+    name: cronie
+    state: present
+- name: install cryptsetup
+  pacman:
+    name: cryptsetup
+    state: present
+- name: install device-mapper
+  pacman:
+    name: device-mapper
+    state: present
+- name: install dialog
+  pacman:
+    name: dialog
+    state: present
+- name: install diffutils
+  pacman:
+    name: diffutils
+    state: present
+- name: install imwheel
+  pacman:
+    name: imwheel
+    state: present
+- name: install inetutils
+  pacman:
+    name: inetutils
+    state: present
+- name: install inotify-tools
+  pacman:
+    name: inotify-tools
+    state: present
+- name: install jmtpfs
+  aur: name=jmtpfs use=yay state=present
+  become: no
+- name: install lvm2
+  pacman:
+    name: lvm2
+    state: present
+- name: install mtools
+  pacman:
+    name: mtools
+    state: present
+- name: install notification-daemon
+  pacman:
+    name: notification-daemon
+    state: present
+- name: install ntfs-3g
+  pacman:
+    name: ntfs-3g
+    state: present
+- name: install openssh
+  pacman:
+    name: openssh
+    state: present
+- name: install os-prober
+  pacman:
+    name: os-prober
+    state: present
+- name: install p7zip
+  pacman:
+    name: p7zip
+    state: present
+- name: install pacman-contrib
+  pacman:
+    name: pacman-contrib
+    state: present
+- name: install pciutils
+  pacman:
+    name: pciutils
+    state: present
+- name: install perl stuff
+  pacman:
+    name: perl, perl-anyevent-i3, perl-file-mimeinfo, perl-json-xs
+    state: present

@@ -13,18 +13,13 @@
     - db
     - apps
     - fonts
+    - unclassified
+    - network
+    - wm
   tasks:
   - name: install arandr
     pacman:
       name: arandr
-      state: present
-  - name: install bash
-    pacman:
-      name: bash, bash-completion
-      state: present
-  - name: install bzip2
-    pacman:
-      name: bzip2
       state: present
   - name: install acpi
     pacman:

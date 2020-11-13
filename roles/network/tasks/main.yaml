@@ -1,0 +1,25 @@
+---
+- name: install dhcpcd
+  pacman:
+    name: dhcpcd
+    state: present
+- name: install ipcalc
+  pacman:
+    name: ipcalc
+    state: present
+- name: install iproute2
+  pacman:
+    name: iproute2
+    state: present
+- name: install iputils
+  pacman:
+    name: iputils
+    state: present
+- name: install iw
+  pacman:
+    name: iw
+    state: present
+- name: install netctl
+  pacman:
+    name: netctl
+    state: present

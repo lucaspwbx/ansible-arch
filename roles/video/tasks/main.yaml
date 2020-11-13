@@ -7,3 +7,11 @@
   pacman:
     name: pepper-flash
     state: present
+- name: install vlc
+  pacman:
+    name: vlc
+    state: present
+- name: install opencl-mesa
+  pacman:
+    name: opencl-mesa
+    state: present
