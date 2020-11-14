@@ -1,0 +1,52 @@
+---
+- name: install xorg-server
+  pacman:
+    name: xorg-server
+    state: present
+- name: install xorg-xbackligjt
+  pacman:
+    name: xorg-xbacklight
+    state: present
+- name: install xorg-xev
+  pacman:
+    name: xorg-xev
+    state: present
+- name: install xorg-xinit
+  pacman:
+    name: xorg-xinit
+    state: present
+- name: install xorg-xinput
+  pacman:
+    name: xorg-xinput
+    state: present
+- name: install xorg-xrandr
+  pacman:
+    name: xorg-xrandr
+    state: present
+- name: install xorg-xsetroot
+  pacman:
+    name: xorg-xsetroot
+    state: present
+- name: install xclip
+  pacman:
+    name: xclip
+    state: present
+- name: install xsel
+  pacman:
+    name: xsel
+    state: present
+- name: install xinput-gui
+  aur: name=xinput-gui use=auto state=present
+  become: no
+- name: install xf86-input-evdev
+  pacman:
+    name: xf86-input-evdev
+    state: present
+- name: install xf86-video-intel
+  pacman:
+    name: xf86-video-intel
+    state: present
+- name: install xterm
+  pacman:
+    name: xterm
+    state: present

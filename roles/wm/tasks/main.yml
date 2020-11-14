@@ -1,6 +1,6 @@
 ---
 - name: install i3-gaps
-  aur: name=i3-gaps use=yay state=present
+  aur: name=i3-gaps use=auto state=present
   become: no
 - name: ls dwm
   shell: ls dwm/

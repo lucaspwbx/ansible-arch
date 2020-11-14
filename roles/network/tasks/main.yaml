@@ -23,3 +23,11 @@
   pacman:
     name: netctl
     state: present
+- name: install wpa_supplicant
+  pacman:
+    name: wpa_supplicant
+    state: present
+- name: install wireless_tools
+  pacman:
+    name: wireless_tools
+    state: present

@@ -32,10 +32,10 @@
     name: pamixer
     state: present
 - name: install mpvc-git
-  aur: name=mpvc-git use=yay state=present
+  aur: name=mpvc-git use=auto state=present
   become: no
 - name: install ncpamixer
-  aur: name=ncpamixer-git use=yay state=present
+  aur: name=ncpamixer-git use=auto state=present
   become: no
 - name: install pavucontrol
   pacman:

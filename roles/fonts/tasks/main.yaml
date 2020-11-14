@@ -1,4 +1,4 @@
 ---
 - name: install ttf-iosevka
-  aur: name=ttf-iosevka use=yay state=present
+  aur: name=ttf-iosevka use=auto state=present
   become: no

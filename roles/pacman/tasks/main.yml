@@ -27,6 +27,17 @@
   command: git clone https://aur.archlinux.org/yay.git 
   become: no
   when: yay_downloaded['failed'] == true
-- name: install yay
-  aur: name=yay use=makepkg state=present
+  #- name: install yay
+  #  aur: name=yay use=makepkg state=present
+  #  become: no
+- name: ls trizen
+  shell: ls trizen/
+  ignore_errors: yes
+  register: trizen_downloaded
+- name: clone trizen
+  command: git clone https://aur.archlinux.org/trizen.git 
+  become: no
+  when: trizen_downloaded['failed'] == true
+- name: install trizen
+  aur: name=trizen use=makepkg state=present
   become: no

@@ -1,6 +1,6 @@
 ---
 - name: install pgcli
-  aur: name=pgcli use=yay state=present
+  aur: name=pgcli use=auto state=present
   become: no
 - name: install dbeaver
   pacman:

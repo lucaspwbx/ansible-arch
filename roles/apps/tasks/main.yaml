@@ -1,9 +1,9 @@
 ---
 - name: install telegram
-  aur: name=telegram-desktop use=yay state=present
+  aur: name=telegram-desktop use=auto state=present
   become: no
 - name: install jdownloader2
-  aur: name=jdownloader2 use=yay state=present
+  aur: name=jdownloader2 use=auto state=present
   become: no
 - name: install dropbox
   aur: name=dropbox use=makepkg state=present skip_pgp_check=yes
@@ -64,6 +64,37 @@
   pacman:
     name: ranger
     state: present
+- name: install xarchiver
+  pacman:
+    name: xarchiver
+    state: present
 - name: install jdownloader2
-  aur: name=jdownloader2 use=yay state=present
+  aur: name=jdownloader2 use=auto state=present
   become: no
+- name: install wget
+  pacman:
+    name: wget
+    state: present
+- name: install tmux
+  pacman:
+    name: tmux
+    state: present
+- name: install thunar
+  pacman:
+    name: thunar, thunar-archive-plugin
+    state: present
+- name: install thunar-dropbox
+  aur: name=thunar-dropbox use=auto state=present
+  become: no
+- name: install texlive-most
+  pacman:
+    name: texlive-most
+    state: present
+- name: install texlab
+  pacman:
+    name: texlab
+    state: present
+- name: install tar
+  pacman:
+    name: tar
+    state: present

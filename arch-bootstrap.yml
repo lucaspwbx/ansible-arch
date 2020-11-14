@@ -16,6 +16,7 @@
     - unclassified
     - network
     - wm
+    - xorg
   tasks:
   - name: install arandr
     pacman:

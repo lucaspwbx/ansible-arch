@@ -48,7 +48,7 @@
     name: inotify-tools
     state: present
 - name: install jmtpfs
-  aur: name=jmtpfs use=yay state=present
+  aur: name=jmtpfs use=auto state=present
   become: no
 - name: install lvm2
   pacman:
@@ -89,4 +89,8 @@
 - name: install perl stuff
   pacman:
     name: perl, perl-anyevent-i3, perl-file-mimeinfo, perl-json-xs
+    state: present
+- name: install 
+  pacman:
+    name: util-linux, usbutils, urlwatch, unrar
     state: present

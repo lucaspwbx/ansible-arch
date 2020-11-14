@@ -10,7 +10,7 @@
 - name: install clj-kondo-bin
   aur:
     name: clj-kondo-bin
-    use: yay
+    use: auto
     state: present
   become: no
 - name: install go
@@ -21,11 +21,15 @@
   pacman:
     name: code
     state: present
+- name: install vim
+  pacman:
+    name: vim
+    state: present
 - name: install neovim
-  aur: name=neovim-nightly use=yay state=present
+  aur: name=neovim-nightly use=auto state=present
   become: no
 - name: install emacs
-  aur: name=emacs use=yay state=present
+  aur: name=emacs use=auto state=present
   become: no
 - name: install yarn
   pacman:
