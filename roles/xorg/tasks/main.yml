@@ -35,9 +35,6 @@
   pacman:
     name: xsel
     state: present
-- name: install xinput-gui
-  aur: name=xinput-gui use=auto state=present
-  become: no
 - name: install xf86-input-evdev
   pacman:
     name: xf86-input-evdev

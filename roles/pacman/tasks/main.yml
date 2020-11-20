@@ -4,7 +4,7 @@
     name: reflector
     state: present
 - name: update mirrors
-  command: reflector --country Brazil --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+  command: reflector --country Brazil --save /etc/pacman.d/mirrorlist
   register: mirrors_updated
 - name: update
   pacman:

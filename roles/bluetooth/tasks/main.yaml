@@ -18,3 +18,11 @@
     name: bluetooth
     enabled: yes
     masked: no
+- name: install bluetooth-autoconnect
+  aur: name=bluetooth-autoconnect use=auto state=present
+  become: no
+- name: enable bluetooth-autoconnect
+  systemd:
+    name: bluetooth-autoconnect
+    enabled: yes
+    masked: no

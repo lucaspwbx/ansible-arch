@@ -1,0 +1,254 @@
+- [ ] acpi
+- [ ] alsa-utils
+- [ ] ansible
+- [ ] ansible-lint
+- [ ] apache
+- [ ] arandr
+- [ ] archiso
+- [ ] autoconf
+- [ ] automake
+- [ ] bash
+- [ ] bash-completion
+- [ ] bat
+- [ ] binutils
+- [ ] bison
+- [ ] blueman
+- [ ] bluez
+- [ ] bluez-utils
+- [ ] bzip2
+- [ ] calibre
+- [ ] cdrtools
+- [ ] clojure
+- [ ] cmake
+- [ ] code
+- [ ] coreutils
+- [ ] cronie
+- [ ] cryptsetup
+- [ ] dbeaver
+- [ ] device-mapper
+- [ ] dhcpcd
+- [ ] dialog
+- [ ] diffutils
+- [ ] dmenu
+- [ ] dmidecode
+- [ ] dnsmasq
+- [ ] docker
+- [ ] docker-compose
+- [ ] dunst
+- [ ] e2fsprogs
+- [ ] ebtables
+- [ ] entr
+- [ ] etckeeper
+- [ ] evince
+- [ ] evtest
+- [ ] exfat-utils
+- [ ] expac
+- [ ] fakeroot
+- [ ] file
+- [ ] filelight
+- [ ] filesystem
+- [ ] findutils
+- [ ] firefox
+- [ ] fish
+- [ ] flashplugin
+- [ ] flex
+- [ ] fzf
+- [ ] gawk
+- [ ] gcc
+- [ ] gcc-libs
+- [ ] gdb
+- [ ] geckodriver
+- [ ] gettext
+- [ ] git
+- [ ] git-crypt
+- [ ] glibc
+- [ ] go
+- [ ] go-tools
+- [ ] gparted
+- [ ] gradle
+- [ ] grafana
+- [ ] grep
+- [ ] groff
+- [ ] grub
+- [ ] gst-libav
+- [ ] gst-plugins-good
+- [ ] gst-plugins-ugly
+- [ ] gstreamer-vaapi
+- [ ] gthumb
+- [ ] gzip
+- [ ] htop
+- [ ] i3-gaps
+- [ ] icedtea-web
+- [ ] imwheel
+- [ ] inetutils
+- [ ] inotify-tools
+- [ ] intellij-idea-community-edition
+- [ ] ipcalc
+- [ ] iproute2
+- [ ] iputils
+- [ ] iw
+- [ ] jami-daemon
+- [ ] jfsutils
+- [ ] jre8-openjdk
+- [ ] keepassxc
+- [ ] kitty
+- [ ] kleopatra
+- [ ] leiningen
+- [ ] less
+- [ ] libjamiclient
+- [ ] libtool
+- [ ] libtorrent
+- [ ] libva-mesa-driver
+- [ ] libva-utils
+- [ ] libvirt
+- [ ] licenses
+- [ ] links
+- [ ] linux
+- [ ] linux-firmware
+- [ ] linux-headers
+- [ ] lostfiles
+- [ ] lvm2
+- [ ] m4
+- [ ] maim
+- [ ] make
+- [ ] man-db
+- [ ] man-pages
+- [ ] mariadb
+- [ ] mdadm
+- [ ] megasync
+- [ ] mesa-vdpau
+- [ ] minikube
+- [ ] mpc
+- [ ] mpd
+- [ ] mpv
+- [ ] mtools
+- [ ] mupdf
+- [ ] nano
+- [ ] ncmpcpp
+- [ ] neofetch
+- [ ] netctl
+- [ ] networkmanager
+- [ ] nginx-mainline
+- [ ] notification-daemon
+- [ ] npm
+- [ ] ntfs-3g
+- [ ] opencl-mesa
+- [ ] openssh
+- [ ] os-prober
+- [ ] p7zip
+- [ ] pacman
+- [ ] pacman-contrib
+- [ ] pamixer
+- [ ] pandoc-citeproc
+- [ ] pandoc-crossref
+- [ ] pass
+- [ ] patch
+- [ ] pavucontrol
+- [ ] pciutils
+- [ ] pepper-flash
+- [ ] perl
+- [ ] perl-anyevent-i3
+- [ ] perl-file-mimeinfo
+- [ ] perl-json-xs
+- [ ] picom
+- [ ] pinta
+- [ ] pkgconf
+- [ ] playerctl
+- [ ] postgresql
+- [ ] procps-ng
+- [ ] prometheus
+- [ ] prometheus-node-exporter
+- [ ] psmisc
+- [ ] pulseaudio
+- [ ] pulseaudio-alsa
+- [ ] pulseaudio-equalizer-ladspa
+- [ ] python-oauth2client
+- [ ] python-pip
+- [ ] python-pipenv
+- [ ] python-pyinotify
+- [ ] python-pylint
+- [ ] python-pywal
+- [ ] qbittorrent
+- [ ] qemu
+- [ ] qpdf
+- [ ] r
+- [ ] ranger
+- [ ] redis
+- [ ] reflector
+- [ ] reiserfsprogs
+- [ ] ripgrep
+- [ ] rlwrap
+- [ ] rofi
+- [ ] rtorrent
+- [ ] ruby
+- [ ] rxvt-unicode
+- [ ] s-nail
+- [ ] scrot
+- [ ] sed
+- [ ] shadow
+- [ ] solaar
+- [ ] stack
+- [ ] strace
+- [ ] sudo
+- [ ] sysfsutils
+- [ ] systemd
+- [ ] systemd-sysvcompat
+- [ ] systemdgenie
+- [ ] tar
+- [ ] tcpdump
+- [ ] telegram-desktop
+- [ ] terraform
+- [ ] texinfo
+- [ ] texlab
+- [ ] texlive-bibtexextra
+- [ ] texlive-core
+- [ ] texlive-fontsextra
+- [ ] texlive-formatsextra
+- [ ] texlive-games
+- [ ] texlive-humanities
+- [ ] texlive-latexextra
+- [ ] texlive-music
+- [ ] texlive-pictures
+- [ ] texlive-pstricks
+- [ ] texlive-publishers
+- [ ] texlive-science
+- [ ] texmaker
+- [ ] thunar
+- [ ] thunar-archive-plugin
+- [ ] tk
+- [ ] tmux
+- [ ] tor
+- [ ] torsocks
+- [ ] traceroute
+- [ ] unrar
+- [X] urlwatch
+- [ ] usbutils
+- [ ] util-linux
+- [X] vagrant
+- [X] vim
+- [X] virt-manager
+- [X] vlc
+- [ ] vulkan-intel
+- [ ] vulkan-radeon
+- [X] wget
+- [X] which
+- [X] wireless_tools
+- [ ] wireshark-qt - NOT NEEDED
+- [X] wpa_supplicant
+- [X] xarchiver
+- [X] xclip
+- [X] xf86-input-evdev
+- [X] xf86-video-intel
+- [X] xfsprogs -> FILESYSTEM STUFF
+- [X] xorg-server
+- [X] xorg-xbacklight
+- [X] xorg-xev
+- [X] xorg-xinit
+- [X] xorg-xinput
+- [X] xorg-xrandr
+- [X] xorg-xsetroot
+- [X] xsel 
+- [X] xterm
+- [X] yamllint
+- [X] yarn
+- [ ] zig

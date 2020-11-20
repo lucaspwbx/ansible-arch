@@ -11,3 +11,6 @@
 - name: install brave-bin
   aur: name=brave-bin use=auto state=present
   become: no
+- name: install felinks
+  aur: name=felinks use=auto state=present
+  become: no

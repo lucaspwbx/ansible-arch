@@ -34,10 +34,6 @@
 - name: install mpvc-git
   aur: name=mpvc-git use=auto state=present
   become: no
-- name: install ncpamixer
-  aur: name=ncpamixer-git use=auto state=present
+- name: install mpdris2
+  aur: name=mpdris2 use=auto state=present
   become: no
-- name: install pavucontrol
-  pacman:
-    name: pavucontrol
-    state: present

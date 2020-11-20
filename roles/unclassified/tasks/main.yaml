@@ -47,9 +47,6 @@
   pacman:
     name: inotify-tools
     state: present
-- name: install jmtpfs
-  aur: name=jmtpfs use=auto state=present
-  become: no
 - name: install lvm2
   pacman:
     name: lvm2

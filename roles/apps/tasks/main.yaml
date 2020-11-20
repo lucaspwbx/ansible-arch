@@ -20,7 +20,7 @@
   pacman:
     name: kitty
     state: present
-- name: install kleopatra
+- name: install kleopatra # manage gpg keys via gui
   pacman:
     name: kleopatra
     state: present
@@ -40,17 +40,13 @@
   pacman:
     name: pass
     state: present
-- name: install peek
+- name: install peek # screen-recorder
   pacman:
     name: peek
     state: present
 - name: install picom
   pacman:
     name: picom
-    state: present
-- name: install picard
-  pacman:
-    name: picard
     state: present
 - name: install pinta
   pacman:
@@ -97,4 +93,34 @@
 - name: install tar
   pacman:
     name: tar
+    state: present
+- name: install maim # screenshots
+  pacman:
+    name: maim
+    state: present
+- name: install z.lua
+  aur: name=z.lua use=auto state=present
+  become: no
+- name: install youtube-dl-git
+  aur: name=youtube-dl-git use=auto state=present
+  become: no
+- name: install ripgrep-all
+  aur: name=ripgrep-all use=auto state=present
+  become: no
+- name: install phantomjs-bin
+  aur: name=phantomjs-bin use=auto state=present
+  become: no
+- name: install pug
+  aur: name=pug use=auto state=present
+  become: no
+- name: install insomnia
+  aur: name=insomnia use=auto state=present
+  become: no
+- name: install which
+  pacman:
+    name: which
+    state: present
+- name: install urlwatch
+  pacman:
+    name: urlwatch
     state: present

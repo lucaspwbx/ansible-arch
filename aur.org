@@ -1,0 +1,40 @@
+aqemu-git - NO
+bluetooth-autoconnect - OK
+brave-bin - OK
+clj-kondo-bin - OK
+dropbox - OK
+emacs-native-comp-git
+felinks - OK
+heroku-cli - NO
+i3status-rust-git - NO
+insomnia - OK
+jdownloader2 - OK
+jmtpfs - NO, stuff to handle android stuff
+lf - NO
+mongodb-bin - NO
+mpdris2 - OK
+mpvc-git - OK
+msodbcsql - NO
+mssql-server - NO
+mssql-tools - NO
+mycli - NO
+ncpamixer-git - NO
+neovim-nightly - OK
+nyxt-browser-git -> NO
+oracle-xe -> cool but not really needed
+pgcli -> OK
+phantomjs-bin -> OK
+pug
+pulseaudio-modules-bt-git - OK
+python-pympv -> REMOVED
+python-yarl-gns3 -> REMOVED
+qutebrowser-git - OK
+ripgrep-all - OK
+spotify
+thunar-dropbox - OK
+tor-browser - OK
+trizen-git - OK
+ttf-iosevka - OK
+xinput-gui -> cool but no
+youtube-dl-git - OK
+z.lua -> OK

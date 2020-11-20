@@ -26,3 +26,8 @@
     pacman:
       name: acpi
       state: present
+  - name: add user 'lucas'
+    user:
+      name: lucas
+      shell: /bin/bash
+      group: wheel
