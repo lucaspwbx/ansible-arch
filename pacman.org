@@ -12,19 +12,19 @@
 - [ ] bat
 - [ ] binutils
 - [ ] bison
-- [ ] blueman
-- [ ] bluez
-- [ ] bluez-utils
+- [X] blueman
+- [X] bluez
+- [X] bluez-utils
 - [ ] bzip2
-- [ ] calibre
+- [X] calibre
 - [ ] cdrtools
-- [ ] clojure
+- [X] clojure
 - [ ] cmake
-- [ ] code
+- [X] code
 - [ ] coreutils
-- [ ] cronie
+- [X] cronie
 - [ ] cryptsetup
-- [ ] dbeaver
+- [X] dbeaver
 - [ ] device-mapper
 - [ ] dhcpcd
 - [ ] dialog
@@ -32,8 +32,8 @@
 - [ ] dmenu
 - [ ] dmidecode
 - [ ] dnsmasq
-- [ ] docker
-- [ ] docker-compose
+- [X] docker
+- [X] docker-compose
 - [ ] dunst
 - [ ] e2fsprogs
 - [ ] ebtables
@@ -190,46 +190,46 @@
 - [ ] stack
 - [ ] strace
 - [ ] sudo
-- [ ] sysfsutils
-- [ ] systemd
-- [ ] systemd-sysvcompat
-- [ ] systemdgenie
-- [ ] tar
-- [ ] tcpdump
-- [ ] telegram-desktop
-- [ ] terraform
+- [X] sysfsutils
+- [ ] systemd  - system stuff
+- [ ] systemd-sysvcompat - system stuff
+- [X] systemdgenie
+- [X] tar
+- [X] tcpdump
+- [X] telegram-desktop
+- [X] terraform
 - [ ] texinfo
-- [ ] texlab
-- [ ] texlive-bibtexextra
-- [ ] texlive-core
-- [ ] texlive-fontsextra
-- [ ] texlive-formatsextra
-- [ ] texlive-games
-- [ ] texlive-humanities
-- [ ] texlive-latexextra
-- [ ] texlive-music
-- [ ] texlive-pictures
-- [ ] texlive-pstricks
-- [ ] texlive-publishers
-- [ ] texlive-science
+- [X] texlab
+- [X] texlive-bibtexextra
+- [X] texlive-core
+- [X] texlive-fontsextra
+- [X] texlive-formatsextra
+- [X] texlive-games
+- [X] texlive-humanities
+- [X] texlive-latexextra
+- [X] texlive-music
+- [X] texlive-pictures
+- [X] texlive-pstricks
+- [X] texlive-publishers
+- [X] texlive-science
 - [ ] texmaker
-- [ ] thunar
-- [ ] thunar-archive-plugin
-- [ ] tk
-- [ ] tmux
-- [ ] tor
-- [ ] torsocks
-- [ ] traceroute
-- [ ] unrar
+- [X] thunar
+- [X] thunar-archive-plugin
+- [ ] tk - not needed
+- [X] tmux
+- [ ] tor - NO
+- [ ] torsocks - NO
+- [X] traceroute
+- [X] unrar
 - [X] urlwatch
-- [ ] usbutils
-- [ ] util-linux
+- [X] usbutils
+- [X] util-linux
 - [X] vagrant
 - [X] vim
 - [X] virt-manager
 - [X] vlc
-- [ ] vulkan-intel
-- [ ] vulkan-radeon
+- [X] vulkan-intel - not sure if is really needed
+- [X] vulkan-radeon - not sure
 - [X] wget
 - [X] which
 - [X] wireless_tools
@@ -251,4 +251,4 @@
 - [X] xterm
 - [X] yamllint
 - [X] yarn
-- [ ] zig
+- [X] zig

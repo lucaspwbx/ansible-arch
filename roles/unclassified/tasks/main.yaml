@@ -91,3 +91,7 @@
   pacman:
     name: util-linux, usbutils, urlwatch, unrar
     state: present
+- name: install sysfsutils
+  pacman:
+    name: sysfsutils
+    state: present

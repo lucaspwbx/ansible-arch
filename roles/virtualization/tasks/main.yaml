@@ -15,6 +15,18 @@
   pacman:
     name: vagrant
     state: present    
+- name: install docker
+  pacman:
+    name: docker
+    state: present    
+- name: install docker-compose
+  pacman:
+    name: docker-compose
+    state: present    
+- name: install terraform
+  pacman:
+    name: terraform
+    state: present    
 # enabled copy and paste support in a guest virtual machine
 #- name: install spice-vdagent
 #  pacman:

@@ -1,4 +1,8 @@
 ---
+- name: install systemdgenie
+  pacman:
+    name: systemdgenie
+    state: present
 - name: install telegram
   aur: name=telegram-desktop use=auto state=present
   become: no
@@ -110,12 +114,12 @@
 - name: install phantomjs-bin
   aur: name=phantomjs-bin use=auto state=present
   become: no
-- name: install pug
-  aur: name=pug use=auto state=present
-  become: no
-- name: install insomnia
-  aur: name=insomnia use=auto state=present
-  become: no
+#- name: install pug
+  #aur: name=pug use=auto state=present
+  #become: no
+#- name: install insomnia
+  #aur: name=insomnia use=auto state=present
+  #become: no
 - name: install which
   pacman:
     name: which

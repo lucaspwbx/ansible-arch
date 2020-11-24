@@ -17,6 +17,10 @@
   pacman:
     name: go
     state: present
+- name: install zig
+  pacman:
+    name: zig
+    state: present
 - name: install code
   pacman:
     name: code

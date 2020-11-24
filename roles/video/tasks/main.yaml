@@ -1,4 +1,12 @@
 ---
+- name: install vulkan-intel
+  pacman:
+    name: vulkan-intel
+    state: present
+- name: install vulkan-radeon
+  pacman:
+    name: vulkan-radeon
+    state: present
 - name: install mpv
   pacman:
     name: mpv
