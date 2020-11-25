@@ -1,4 +1,8 @@
 ---
+- name: install ruby
+  pacman:
+    name: ruby
+    state: present
 - name: install rust
   pacman:
     name: rust
@@ -50,4 +54,12 @@
 - name: install python stuff
   pacman:
     name: python-oauth2client, python-pip, python-pipenv, python-pyinotify
+    state: present
+- name: install stack
+  pacman:
+    name: stack
+    state: present
+- name: install perl
+  pacman:
+    name: perl
     state: present

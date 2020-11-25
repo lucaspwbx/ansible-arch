@@ -3,14 +3,18 @@
   pacman:
     name: reflector
     state: present
+- name: grep mirrors
+  shell: "grep -ir 'country Brazil' /etc/pacman.d/mirrorlist"
+  register: grep_output
 - name: update mirrors
   command: reflector --country Brazil --save /etc/pacman.d/mirrorlist
+  when: grep_output.stdout == ''
   register: mirrors_updated
 - name: update
   pacman:
     update_cache: yes
-  when:
-    mirrors_updated['failed'] == false
+  register: cache_updated
+  when: mirrors_updated is undefined
 - name: install base-devel
   pacman:
     name: base-devel

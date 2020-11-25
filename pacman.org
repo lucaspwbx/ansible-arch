@@ -141,54 +141,54 @@
 - [ ] pamixer
 - [ ] pandoc-citeproc
 - [ ] pandoc-crossref
-- [ ] pass
-- [ ] patch
-- [ ] pavucontrol
+- [ ] pass - no
+- [ ] patch - maybe
+- [X] pavucontrol
 - [ ] pciutils
-- [ ] pepper-flash
-- [ ] perl
+- [X] pepper-flash
+- [X] perl
 - [ ] perl-anyevent-i3
 - [ ] perl-file-mimeinfo
 - [ ] perl-json-xs
-- [ ] picom
-- [ ] pinta
-- [ ] pkgconf
-- [ ] playerctl
-- [ ] postgresql
+- [X] picom
+- [X] pinta - no
+- [ ] pkgconf - maybe
+- [X] playerctl
+- [X] postgresql
 - [ ] procps-ng
-- [ ] prometheus
-- [ ] prometheus-node-exporter
+- [X] prometheus
+- [X] prometheus-node-exporter
 - [ ] psmisc
-- [ ] pulseaudio
-- [ ] pulseaudio-alsa
-- [ ] pulseaudio-equalizer-ladspa
-- [ ] python-oauth2client
-- [ ] python-pip
-- [ ] python-pipenv
-- [ ] python-pyinotify
-- [ ] python-pylint
-- [ ] python-pywal
-- [ ] qbittorrent
-- [ ] qemu
-- [ ] qpdf
-- [ ] r
-- [ ] ranger
-- [ ] redis
-- [ ] reflector
-- [ ] reiserfsprogs
-- [ ] ripgrep
-- [ ] rlwrap
-- [ ] rofi
-- [ ] rtorrent
-- [ ] ruby
-- [ ] rxvt-unicode
-- [ ] s-nail
-- [ ] scrot
-- [ ] sed
-- [ ] shadow
-- [ ] solaar
-- [ ] stack
-- [ ] strace
+- [X] pulseaudio
+- [X] pulseaudio-alsa
+- [X] pulseaudio-equalizer-ladspa
+- [X] python-oauth2client
+- [X] python-pip
+- [X] python-pipenv
+- [X] python-pyinotify
+- [X] python-pylint
+- [X] python-pywal
+- [X] qbittorrent
+- [X] qemu
+- [ ] qpdf - no
+- [ ] r - no
+- [X] ranger
+- [ ] redis - no
+- [X] reflector
+- [ ] reiserfsprogs - archboot
+- [X] ripgrep
+- [X] rlwrap
+- [ ] rofi - no
+- [ ] rtorrent - no
+- [X] ruby
+- [ ] rxvt-unicode - no
+- [ ] s-nail - no
+- [ ] scrot - no, use maim
+- [ ] shadow - dependency of a lot of stuff
+- [X] sed
+- [X] solaar
+- [X] stack
+- [X] strace
 - [ ] sudo
 - [X] sysfsutils
 - [ ] systemd  - system stuff

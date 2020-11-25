@@ -31,3 +31,8 @@
       name: lucas
       shell: /bin/bash
       group: wheel
+  - name: add .xinitrc
+    copy:
+      src: ~/.xinitrc
+      dest: "/home/vagrant/.xinitrc"
+      owner: vagrant

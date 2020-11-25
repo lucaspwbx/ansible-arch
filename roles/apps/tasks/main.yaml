@@ -16,6 +16,10 @@
   pacman:
     name: calibre
     state: present
+- name: install  ripgreg
+  pacman:
+    name: ripgrep
+    state: present
 - name: install keepassxc
   pacman:
     name: keepassxc
@@ -127,4 +131,12 @@
 - name: install urlwatch
   pacman:
     name: urlwatch
+    state: present
+- name: install solaar
+  pacman:
+    name: solaar
+    state: present
+- name: install prometheus and prometheus-node-exporter
+  pacman:
+    name: prometheus, prometheus-node-exporter
     state: present

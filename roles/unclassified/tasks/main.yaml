@@ -85,7 +85,7 @@
     state: present
 - name: install perl stuff
   pacman:
-    name: perl, perl-anyevent-i3, perl-file-mimeinfo, perl-json-xs
+    name: perl, perl-file-mimeinfo
     state: present
 - name: install 
   pacman:
@@ -94,4 +94,16 @@
 - name: install sysfsutils
   pacman:
     name: sysfsutils
+    state: present
+- name: install strace
+  pacman:
+    name: strace
+    state: present
+- name: install sed
+  pacman:
+    name: sed
+    state: present
+- name: install rlwrap
+  pacman:
+    name: rlwrap
     state: present

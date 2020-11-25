@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "generic/arch"
-  config.vm.provision "shell", inline: "yes | sudo pacman -S python"
+  config.vm.provision "shell", path: "install_python.sh"
 
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
